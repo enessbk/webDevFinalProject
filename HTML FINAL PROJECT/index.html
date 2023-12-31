@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="student.js" defer></script>
+    <script src="course.js" defer></script>
+    <script src="students-list.js" defer></script>
+    <script src="course-list.js" defer></script>
+    <script src="department.js" defer></script>
+    <script src="department-list.js" defer></script>
+    <script src="script.js" defer></script>
+
+    <title>Document</title>
+</head>
+<body>
+  <!-- the nav bar with left nav right nav-->
+<nav>
+    <div id="left-nav"><div id="home">Home</div>
+    <div>Student</div>
+    <div>courses</div></div>
+    <div id="right-nav"><div>profile</div>
+    <div>Sign out</div></div>
+</nav>
+<section>
+  <!-- add student filling box its already hidden-->
+    <div class="hidden" id="st">
+        <div id="add-student"><form>
+        <label for="studentName">First name:</label><br>
+        <input type="text" id="studentName" name="studentName"><br>
+        <label for="studentSurname">Last name:</label><br>
+        <input type="text" id="studentSurname" name="studentSurname"><br>
+        <label for="student-id">student id:</label><br>
+        <input type="text" id="student-id" name="student-id"><br>
+        <label for="kimlik">kimlik:</label><br>
+        <input type="text" id="kimlik" name="kimlik">
+      </form>
+      <div>
+        <button id="cancel">Cancel</button>
+        <button id="save">Save</button> </div></div>
+    </div>
+    <!-- add course filling box its already hidden-->
+    <div class="hidden" id="add-course-input-filling">
+        <div id="add-course"><form>
+        <label for="course-code">course code:</label><br>
+        <input type="text" id="course-code" name="course-code"><br>
+        <label for="course-name">course name:</label><br>
+        <input type="text" id="course-name" name="course-name"><br>
+        <label for="instructor">instructor:</label><br>
+        <input type="text" id="instructor" name="instructor"><br>
+      </form>
+      <div>
+        <button id="cancel-add-course">Cancel</button>
+        <button id="save-add-course">Save</button> </div></div>
+    </div>
+    <!-- add department filling box its already hidden-->
+    <div class="hidden" id="add-department-input-filling">
+        <div id="add-department"><form>
+        <label for="department-code">Department code:</label><br>
+        <input type="text" id="department-code" name="department-code"><br>
+        <label for="department-name">department name:</label><br>
+        <input type="text" id="department-name" name="department-name"><br>
+        <label for="head-of-department">Head of department:</label><br>
+        <input type="text" id="head-of-department" name="head-of-department"><br>
+      </form>
+      <div>
+        <button id="cancel-add-department">Cancel</button>
+        <button id="save-add-department">Save</button> </div></div>
+    </div>
+    <!-- home page sectionction menu 
+    add student box 
+    add courses box
+    add department box and so on-->
+    <div id="first-line-boxes">
+    <div id="add-student-box">Add<br>Student</div>
+    <div id="add-course-box">Add<br>courses</div>
+    <div id="add-department-box">Add<br>Department</div></div>
+    <div id="second-line-boxes">
+    <div id="students-count-box">Student<br>0</div>
+    <div id="courses-count-box">courses<br>0</div>
+    <div id="departments-count-box">Department<br>0</div>
+    </div>
+</section> 
+
+
+
+
+<!-- here where the list of student show up in this hidden container-->
+<div class="hidden" id="show-box-container">
+    <h1 id="show-box-header">Students</h1>
+    <div id="search-bar">
+        <input type="text" id="searchBarInput" name="searchBarInput"><button id="search-bar-button">Search</button>
+    </div>
+<div id="show-box"></div>
+</div>
+<!-- where th student info will show up you can use update delete  or add course to edt the student-->
+<div class="hidden"  id="student-update-container">
+    <div id="update-student-input-container">
+        <h1 id="student-full-name-header"></h1>
+        <input type="text" id="student-info-kimlik" placeholder="Enter kimlik">
+        <input type="text" id="student-info-id" placeholder="Enter student id"><br>
+        <input type="text" id="student-info-name" placeholder="Enter name">
+        <input type="text" id="student-info-surname" placeholder="Enter surname"><br>
+        <div id="added-department"></div>
+        <input type="text" id="student-info-department" placeholder="Enter department name or code">
+        <button id="add-department-button">Add</button><br>
+        <div id="added-courses"></div>
+        <input type="text" id="student-info-course" placeholder="Enter course code or name">
+        <button id="add-course-button">Assign</button><br>
+        <button id="cancel-update-student-button">Cancel</button>
+        <button id="update-student-button">Update</button>
+        <button id="delete-student-button">delete</button>
+</div>
+
+
+
+</body>
+</html>

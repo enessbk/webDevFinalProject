@@ -1,0 +1,3 @@
+const DEPARTMENT_LIST = [
+    
+];
